@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+        <link rel="shortcut icon" href="{% static 'img/subway-solid.svg' %}">
+
+        <title> {{ page_title }} </title>
+    </head>
+
+    {% block alert %}
+
+    {% endblock %}
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" style="text-align: center;" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item {{ home_isActive }}"> <a class="nav-link" href="/"> <span class="fas fa-route"> </span> Find Route </a> </li>
+                        <li class="nav-item {{ listOfStations_isActive }}"> <a class="nav-link" href="/listofstations"> <span class="fas fa-map-marker-alt"> </span> List Of Stations </a> </li>
+                        <li class="nav-item {{ about_isActive }}"> <a class="nav-link" href="/about"> <span class="fas fa-info-circle"> </span> About </a> </li>
+                    </ul> 
+                </div>
+            </nav>
+        </div>
+
+        <br>
+        
+        {% block content %}
+
+        {% endblock %}
+
+        {% block content2 %}
+
+        {% endblock %}
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0abf47268d.js" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
