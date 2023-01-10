@@ -23,6 +23,6 @@ To start the project in your local:
 ### python manage.py runserver
 
 
--For making queries, head to the UI and get your answers.
+-For making queries, head to the UI and make queries for recieving the shortest path as an output.
 
 Thanks
