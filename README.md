@@ -18,7 +18,7 @@ To start the project in your local:
 
 -install django using official website.
 
--use the command 
+-use the command after opening the project in PyCharm and moving to project directory in terminal.
 
 ### python manage.py runserver
 
