@@ -1,4 +1,4 @@
-# Graph-Railway-Network-shortest-path
+# Railway-Route-Planner-shortest-path
 Django Project for computing the shortest path of a railway network which uses shortest path algorithm in a graph assuming tracks as edges. 
 
 Technologies used: Django, HTML, CSS.
